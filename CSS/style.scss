@@ -1,0 +1,38 @@
+// GENERALE
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+}
+// COLOR
+$lavande: #9656DC;
+$rose: #FF79DA;
+$blue: #99E2D0;
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 50%;
+    box-shadow: 0 3px 80px 25%;
+    font-family: 'Shrikhand', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.locate {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 auto;
+    background: rgb(227, 218, 218);
+
+    >.fa-solid {
+        margin: 0 10px 0 -10px;
+    }
+    
+}
