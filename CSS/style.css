@@ -73,20 +73,22 @@ header button:hover {
   cursor: pointer;
 }
 
-.sub-nav {
+.sub--nav {
   font-size: 17.6px;
   font-weight: bolder;
   margin: 0 0 0 16px;
 }
-.sub-nav h2 {
-  margin-bottom: 32px;
+.sub--nav h2 {
+  margin: 42px 0 32px 0;
 }
-.sub-nav > ol {
-  padding: 0 32px;
+.sub--nav > ol {
+  padding: 0 8px;
 }
-.sub-nav > ol li {
-  margin: 16px 0;
-  text-decoration: double;
+.sub--nav > ol li {
+  margin: 32px 0 32px 16px;
+}
+.sub--nav > ol li .fa-solid {
+  margin-right: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
