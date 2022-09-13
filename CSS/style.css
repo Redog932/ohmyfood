@@ -22,7 +22,17 @@ h1 {
   box-shadow: -1px -20px 12px 20px rgba(0, 0, 0, 0.5);
 }
 
-.locate {
+header {
+  width: 100%;
+}
+header section {
+  background-color: rgb(243, 243, 243);
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+header .locate {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,37 +40,53 @@ h1 {
   margin-bottom: 32px;
   gap: 16px;
 }
-.locate p {
+header .locate p {
   font-weight: bold;
 }
-
-h2 {
+header h2 {
   text-align: center;
   font-size: x-large;
   font-weight: bolder;
 }
-
-p {
+header p {
   text-align: center;
   font-size: medium;
 }
-
-.explorer {
+header .explorer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-button {
+header button {
   color: white;
   background-color: #9656dc;
   border: none;
   border-radius: 32px;
   font-weight: bold;
-  font-size: 100;
+  font-size: 17.6px;
   padding: 16px 32px;
   box-shadow: 10px 8px 20px -8px rgba(0, 0, 0, 0.49);
   background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
+  margin-bottom: 48px;
+}
+header button:hover {
+  cursor: pointer;
+}
+
+.sub-nav {
+  font-size: 17.6px;
+  font-weight: bolder;
+  margin: 0 0 0 16px;
+}
+.sub-nav h2 {
+  margin-bottom: 32px;
+}
+.sub-nav > ol {
+  padding: 0 32px;
+}
+.sub-nav > ol li {
+  margin: 16px 0;
+  text-decoration: double;
 }
 
 /*# sourceMappingURL=style.css.map */
