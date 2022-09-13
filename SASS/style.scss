@@ -1,38 +1,36 @@
+
+
+@use "abstract" as *; 
+
 /*GENERALE*/
 * {
   box-sizing: border-box;
 }
-
 body {
   width: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-
 /*HEADER*/
 h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexMid;
   position: relative;
   margin: 0 auto;
   padding: 16px;
   width: 100%;
   font-family: "Shrikhand", cursive;
-  box-shadow: -1px -20px 12px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px -20px 12px 20px rgb(0 0 0 / 50%);
 }
 
 .locate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexMid;
   background: rgb(227, 218, 218);
   margin-bottom: 32px;
   gap: 16px;
-}
-.locate p {
-  font-weight: bold;
-}
+  & p {
+    font-weight: bold;
+  }
+  }
 
 h2 {
   text-align: center;
@@ -45,22 +43,17 @@ p {
   font-size: medium;
 }
 
-.explorer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-button {
+.explorer{
+  @include flexMid;
+  }
+  button {
   color: white;
-  background-color: #9656dc;
+  background-color: $primary;
   border: none;
   border-radius: 32px;
   font-weight: bold;
   font-size: 100;
   padding: 16px 32px;
-  box-shadow: 10px 8px 20px -8px rgba(0, 0, 0, 0.49);
-  background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
+  box-shadow: 10px 8px 20px -8px rgb(0 0 0 / 49%);
+  background-image: linear-gradient(to top, $primary, rgb(234, 118, 234));
 }
-
-/*# sourceMappingURL=style.css.map */
