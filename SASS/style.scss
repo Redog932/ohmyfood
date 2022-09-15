@@ -23,7 +23,7 @@ h1 {
 header {
   width: 100%;
   section {
-    background-color: rgb(243, 243, 243);
+    background-color: $lightgrey;
   }
 
   a {
@@ -32,7 +32,7 @@ header {
   }
   .locate {
     @include flexMid;
-    background: rgb(227, 218, 218);
+    background-color: $smokegrey;
     margin-bottom: 32px;
     gap: 16px;
     & p {
@@ -81,7 +81,11 @@ header {
   > ol {
     padding: 0 8px;
     li {
-      margin: 32px 0 32px 16px;
+      padding: 24px 32px;
+      margin: 16px 0;
+      background-color: $smokegrey;
+      box-shadow: 1px 11px 13px 0px rgb(0 0 0 / 49%);
+      border-radius: 16px;
       .fa-solid {
         margin-right: 16px;
       }
