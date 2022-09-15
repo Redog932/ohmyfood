@@ -70,21 +70,21 @@ header {
     }
   }
 }
+h2 {
+  margin: 42px 0 24px 8px;
+}
 
 .tuto {
   font-size: 17.6px;
   font-weight: bolder;
-  margin: 0 0 0 16px;
-  h2 {
-    margin: 42px 0 32px 0;
-  }
+  margin: 0 0 0 20px;
   > ol {
     padding: 0 8px;
     li {
       padding: 24px 32px;
       margin: 16px 0;
       background-color: $smokegrey;
-      box-shadow: 1px 11px 13px 0px rgb(0 0 0 / 49%);
+      box-shadow: 2px 7px 13px 0px rgb(0 0 0 / 49%);
       border-radius: 16px;
       & span {
         color: black;
@@ -101,5 +101,25 @@ header {
         color: grey;
       }
     }
+  }
+}
+
+.card--disposition {
+  background-color: $lightgrey;
+  &>h2 {
+    padding: 42px 0 16px 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .restaurant {
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+  }
+  & img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
   }
 }
