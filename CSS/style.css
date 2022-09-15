@@ -73,25 +73,25 @@ header button:hover {
   cursor: pointer;
 }
 
-.sub--nav {
+.tuto {
   font-size: 17.6px;
   font-weight: bolder;
   margin: 0 0 0 16px;
 }
-.sub--nav h2 {
+.tuto h2 {
   margin: 42px 0 32px 0;
 }
-.sub--nav > ol {
+.tuto > ol {
   padding: 0 8px;
 }
-.sub--nav > ol li {
+.tuto > ol li {
   padding: 24px 32px;
   margin: 16px 0;
   background-color: #ebebeb;
   box-shadow: 1px 11px 13px 0px rgba(0, 0, 0, 0.49);
   border-radius: 16px;
 }
-.sub--nav > ol li .fa-solid {
+.tuto > ol li .fa-solid {
   margin-right: 16px;
 }
 
