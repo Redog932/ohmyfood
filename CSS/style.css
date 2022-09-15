@@ -91,8 +91,19 @@ header button:hover {
   box-shadow: 1px 11px 13px 0px rgba(0, 0, 0, 0.49);
   border-radius: 16px;
 }
+.tuto > ol li span {
+  color: black;
+}
+.tuto > ol li:hover {
+  background-color: #ffdbf5;
+  color: #9656dc;
+}
+.tuto > ol li:hover .fa-solid {
+  color: #9656dc;
+}
 .tuto > ol li .fa-solid {
   margin-right: 16px;
+  color: grey;
 }
 
 /*# sourceMappingURL=style.css.map */
