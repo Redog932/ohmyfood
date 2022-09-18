@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+p {
+  text-align: center;
+  font-size: medium;
+  margin-bottom: 42px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+header a {
+  color: inherit;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 16px;
+  width: 100%;
+  font-family: "Shrikhand", cursive;
+  box-shadow: 0px -20px 12px 14px;
+}
+
+.locate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background-color: #ebebeb;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+.locate input {
+  border: none;
+  background-color: #ebebeb;
+  margin: 0 -106px 0 16px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.tuto {
+  width: 100%;
+  margin-bottom: 64px;
+}
+.tuto__title {
+  text-align: start;
+  margin-left: 8px;
+}
+.tuto__list {
+  font-size: 17.6px;
+  font-weight: bolder;
+  margin: 0 0 0 20px;
+}
+.tuto__list > ol {
+  padding: 0 8px;
+}
+.tuto__list > ol li {
+  padding: 24px 32px;
+  margin: 16px 0;
+  background-color: #ebebeb;
+  box-shadow: 2px 7px 13px 0 rgba(0, 0, 0, 0.49);
+  border-radius: 16px;
+}
+.tuto__list > ol li span {
+  color: black;
+}
+.tuto__list > ol li .fa-location-dot {
+  margin: 0 16px 0 0;
+}
+.tuto__list > ol li:hover {
+  background-color: #ffdbf5;
+  color: #9656dc;
+}
+.tuto__list > ol li:hover .fa-solid {
+  color: #9656dc;
+}
+.tuto__list > ol li .fa-solid {
+  margin-right: 16px;
+  color: grey;
+}
+
+.card {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  border-radius: 16px;
+  background-color: white;
+}
+.card__img {
+  width: 100%;
+  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+.card__title {
+  font-weight: bolder;
+  padding: 0 8px;
+}
+.card__text {
+  text-align: start;
+  padding: 0 8px;
+}
+
+.title {
+  background-color: #f6f6f6;
+}
+
+.cards__title {
+  text-align: start;
+  padding: 0 8px;
+}
+
+.explorer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explorer__button {
+  color: white;
+  background-color: #9656dc;
+  border: none;
+  border-radius: 32px;
+  font-weight: bold;
+  font-size: 17.6px;
+  padding: 16px 32px;
+  box-shadow: -1px -20px 12px 20px;
+  background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
+  margin-bottom: 48px;
+}
+.explorer__button:hover {
+  cursor: pointer;
+}
+
+.cards {
+  padding-top: 42px;
+}
+.cards--display {
+  background-color: #f6f6f6;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.menu {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

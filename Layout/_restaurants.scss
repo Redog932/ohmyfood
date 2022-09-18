@@ -1,0 +1,11 @@
+.cards {
+    padding-top: 42px;
+    &--display {
+        background-color: $lightgrey;
+        column-gap: 16px;
+    }
+}
+
+.menu {
+    width: 100%;
+}

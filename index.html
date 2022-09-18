@@ -9,35 +9,32 @@
       src="https://kit.fontawesome.com/b688b228e4.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <header>
       <a href="#">
-          <h1>ohmyfood</h1>
+        <h1>ohmyfood</h1>
       </a>
-      <section>
-          <div class="locate">
-              <i class="fa-solid fa-location-dot"></i>
-              <p>Paris, Belleville</p>
-            </div>
-            <h2>Réservez le menu qui <br> vous convient </h2>
-            <p>Découvrez des restaurants d'éxeption, <br> séléctionnés par nos soins</p>
-            <div class="explorer">
-                <button><a href="#">Explorer nos restaurants</a></button>
-            </div>
-        </section>
     </header>
+    <section class="title">
+        <div class="locate">
+            <label>
+                <input type="text" placeholder="Paris, Belleville"/>
+              </label>
+          </div>
+          <h2>Réservez le menu qui <br> vous convient </h2>
+          <p>Découvrez des restaurants d'éxeption, <br> séléctionnés par nos soins</p>
+          <div class="explorer">
+              <button class="explorer__button"><a href="#">Explorer nos restaurants</a></button>
+          </div>
+      </section>
     <main>
-      <section>
-        <h2>Fonctionnement</h2>
-        <div class="tuto">
+      <section class="tuto">
+        <h2 class="tuto__title">Fonctionnement</h2>
+        <div  class="tuto__list">
             <ol>
                 <li>
                     <div>
@@ -56,17 +53,29 @@
             </ol>
         </div>
       </section>
-      <section class="card--disposition">
-        <h2>Restaurants</h2>
-        <div class="card">
-          <div class="restaurant">
-            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-            <span>La pallete du goût</span>
-            <p>Ménilmontant</p>
+      <section class="cards cards--display">
+        <h2 class="cards__title">Restaurants</h2>
+        <div class="menu">
+          <div class="card">
+            <img class="card__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+            <span class="card__title">La pallete du goût</span>
+            <p class="card__text">Ménilmontant</p>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="card">
+            <img class="card__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+            <span class="card__title">La pallete du goût</span>
+            <p class="card__text">Ménilmontant</p>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+            <span class="card__title">La pallete du goût</span>
+            <p class="card__text">Ménilmontant</p>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+            <span class="card__title">La pallete du goût</span>
+            <p class="card__text">Ménilmontant</p>
+          </div>
         </div>
       </section>
     </main>

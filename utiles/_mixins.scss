@@ -1,0 +1,13 @@
+@mixin flexMid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin Shadow {
+    box-shadow: -1px -20px 12px 20px;
+}
+
+@mixin radius($top,$right,$bottom,$left){
+    border-radius : 16px;
+}

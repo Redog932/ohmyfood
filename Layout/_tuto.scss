@@ -1,0 +1,30 @@
+.tuto {
+    font-size: 17.6px;
+    font-weight: bolder;
+    margin: 0 0 0 20px;
+    > ol {
+      padding: 0 8px;
+      li {
+        padding: 24px 32px;
+        margin: 16px 0;
+        background-color: $smokegrey;
+        box-shadow: 2px 7px 13px 0px rgb(0 0 0 / 49%);
+        border-radius: 16px;
+        & span {
+          color: black;
+        }
+        &:hover {
+          background-color: #ffdbf5;
+          color: $primary;
+          .fa-solid {
+            color: $primary;
+          }
+        }
+        .fa-solid {
+          margin-right: 16px;
+          color: grey;
+        }
+      }
+    }
+  }
+  
