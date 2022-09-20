@@ -31,7 +31,8 @@ header {
 header a {
   color: inherit;
 }
-header h1 {
+
+h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,4 +278,24 @@ header h1 {
 }
 .contact .fa-utensils {
   margin-right: 14px;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  top: 32px;
+  left: 16px;
+}
+
+main > img {
+  width: 100%;
+  height: auto;
+}
+
+section h1 {
+  justify-content: flex-start;
+  box-shadow: none;
+}
+
+.page__menu {
+  border-radius: 16px 16px 0 0;
 }/*# sourceMappingURL=style.css.map */
