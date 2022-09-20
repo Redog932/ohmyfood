@@ -1,15 +1,16 @@
 .locate {
-    @include flexMid;
-    height: 48px;
-    background-color: $smokegrey;
-    margin-bottom: 32px;
-    gap: 16px;
+  @include flexMid;
+  height: 48px;
+  background-color: $smokegrey;
+  margin-bottom: 32px;
+  gap: 16px;
 
-    & input{
+  & input {
+    width: 100%;
     border: none;
-    background-color: $smokegrey; 
-    margin: 0 -106px 0  16px;
+    background-color: $smokegrey;
+    margin: 0 -106px 0 16px;
     font-size: large;
-    font-weight: bolder;   
-    }
+    font-weight: bolder;
+  }
 }

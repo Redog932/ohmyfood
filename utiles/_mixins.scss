@@ -8,6 +8,9 @@
     box-shadow: -1px -20px 12px 20px;
 }
 
-@mixin radius($top,$right,$bottom,$left){
-    border-radius : 16px;
+@mixin Radius ($radius) {
+    -webkit-border-radius : $radius;
+    -moz-border-radius : $radius;
+    -o-border-radius : $radius;
+    border-radius : $radius;
 }

@@ -8,10 +8,9 @@
   &__list {
     font-size: 17.6px;
     font-weight: bolder;
-    margin: 0 0 0 20px;
-    > ol {
-      padding: 0 8px;
-      li {
+    & ol {
+      padding: 0 16px;
+      & li {
         padding: 24px 32px;
         margin: 16px 0;
         background-color: $smokegrey;
