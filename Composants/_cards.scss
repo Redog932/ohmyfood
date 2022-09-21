@@ -1,6 +1,6 @@
 .card {
-  margin: 32px auto;
-  width: 90%;
+  margin: 32px 32px;
+
   @include Radius(16px);
   background-color: white;
   position: relative;
@@ -19,13 +19,29 @@
       position: relative;
       line-height: 50%;
       padding: 1px 0px;
-      
+
       i {
         @include heart--position;
+        
       }
     }
   }
-
+  
+  .heart--full{
+    opacity: 0;
+  &:hover {
+    color: $primary;
+    transition-duration: 00.25s;
+    transform-origin: center;
+    opacity: 1;
+  }
+}
+  .heart--empty {
+    opacity: 1;
+    &:hover {
+      opacity: 0;
+    }
+  }
   &--badge {
     position: absolute;
     top: 16px;
