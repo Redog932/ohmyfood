@@ -21,10 +21,7 @@
       padding: 1px 0px;
       
       i {
-        font-size: 32px;
-        position: absolute;
-        right: 16px;
-        top: 20%;
+        @include heart--position;
       }
     }
   }
