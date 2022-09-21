@@ -26,22 +26,7 @@
       }
     }
   }
-  
-  .heart--full{
-    opacity: 0;
-  &:hover {
-    color: $primary;
-    transition-duration: 00.25s;
-    transform-origin: center;
-    opacity: 1;
-  }
-}
-  .heart--empty {
-    opacity: 1;
-    &:hover {
-      opacity: 0;
-    }
-  }
+
   &--badge {
     position: absolute;
     top: 16px;
@@ -55,5 +40,21 @@
     text-align: start;
     padding: 0 8px;
     color: $grey;
+  }
+}
+
+.heart--full{
+  opacity: 0;
+&:hover {
+  color: $primary;
+  transition-duration: 00.25s;
+  transform-origin: center;
+  opacity: 1;
+}
+}
+.heart--empty {
+  opacity: 1;
+  &:hover {
+    opacity: 0;
   }
 }
