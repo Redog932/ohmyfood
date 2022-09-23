@@ -1,7 +1,7 @@
 .explorer {
   margin-top: 42px;
   @include flexMid;
-  &__button {
+  .button {
       color: white;
       background-color: $primary;
     border: none;

@@ -3,6 +3,12 @@
   font-weight: bolder;
   padding: 0 8px;
   counter-reset: tuto-list;
+  
+  &__title {
+    text-align: start;
+    padding: 0 5%;
+  }
+
   & ol {
     list-style-type: none;
     display: flex;
@@ -43,7 +49,7 @@
         }
       }
 
-      & i.fas {
+      & i.fa-solid {
         margin-right: 16px;
         color: grey;
       }
