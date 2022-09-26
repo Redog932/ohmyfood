@@ -9,9 +9,10 @@
   font-size: 32px;
   position: absolute;
   right: 16px;
-  top: 20%;
+  top: 15%;
   &:hover {
     cursor: pointer;
+    transition: 000.25s;
   }
 }
 

@@ -47,18 +47,19 @@
   }
 }
 
-.heart--full{
+.heart--full {
   opacity: 0;
-&:hover {
-  color: $primary;
-  transition-duration: 00.25s;
-  transform-origin: center;
-  opacity: 1;
-}
+  &:hover {
+    color: $primary;
+    transform-origin: center;
+    transform: 0.25ms;
+    opacity: 1;
+  }
 }
 .heart--empty {
   opacity: 1;
   &:hover {
+    color: linear-gradient(to top, $primary, rgb(234, 118, 234));
     opacity: 0;
   }
 }

@@ -88,10 +88,11 @@ button:hover {
   font-size: 32px;
   position: absolute;
   right: 16px;
-  top: 20%;
+  top: 15%;
 }
 .card__title--position i:hover {
   cursor: pointer;
+  transition: 0.25s;
 }
 .card--badge {
   position: absolute;
@@ -112,8 +113,8 @@ button:hover {
 }
 .heart--full:hover {
   color: #9656dc;
-  transition-duration: 0.25s;
   transform-origin: center;
+  transform: 0.25ms;
   opacity: 1;
 }
 
@@ -121,6 +122,7 @@ button:hover {
   opacity: 1;
 }
 .heart--empty:hover {
+  color: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   opacity: 0;
 }
 
@@ -183,11 +185,29 @@ h1 {
   text-align: start;
   padding: 0 5%;
 }
+@media screen and (min-width: 599px) {
+  .tuto__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .tuto ol {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+@media screen and (min-width: 599px) {
+  .tuto ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+  }
 }
 .tuto ol li {
   justify-content: flex-start;
@@ -277,13 +297,15 @@ section h1 {
 .page__menu {
   border-radius: 16px 16px 0 0;
   position: relative;
+  background-color: #f6f6f6;
 }
 .page__menu i {
   font-size: 32px;
   position: absolute;
   right: 16px;
-  top: 20%;
+  top: 15%;
 }
 .page__menu i:hover {
   cursor: pointer;
+  transition: 0.25s;
 }/*# sourceMappingURL=style.css.map */

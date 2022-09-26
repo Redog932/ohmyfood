@@ -17,6 +17,7 @@ section h1 {
 .page__menu {
   border-radius: 16px 16px 0 0;
   position: relative;
+  background-color: $lightgrey;
 
   & i {
     @include heart--position;
