@@ -355,6 +355,7 @@ section h1 {
     grid-template-rows: 1fr;
     grid-column-gap: 8px;
     grid-row-gap: 8px;
+    width: 100%;
   }
 }
 .page__menu button {
@@ -381,6 +382,8 @@ section h1 {
 .selection__title {
   text-align: start;
   margin: 16px;
+  display: inline-block;
+  border-bottom: 5px solid #99e2d0;
 }
 .selection__food {
   position: relative;

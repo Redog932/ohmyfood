@@ -49,11 +49,12 @@ section h1 {
 
   .desktop--grid {
     @media screen and (min-width: 599px) {
-    display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 8px;
-grid-row-gap: 8px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 8px;
+      grid-row-gap: 8px;
+      width: 100%;
     }
   }
 
@@ -73,6 +74,8 @@ grid-row-gap: 8px;
   &__title {
     text-align: start;
     margin: 16px;
+    display: inline-block;
+    border-bottom: 5px solid $third;
   }
 
   &__food {
