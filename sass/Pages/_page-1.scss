@@ -104,5 +104,8 @@ grid-row-gap: 8px;
     position: absolute;
     width: 100%;
     bottom: -135%;
+    // @media screen and (min-width: 599px) {
+    //   bottom: -115%;
+    // }
   }
 }
