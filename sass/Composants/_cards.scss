@@ -59,7 +59,6 @@
 .heart--empty {
   opacity: 1;
   &:hover {
-    color: linear-gradient(to top, $primary, rgb(234, 118, 234));
     opacity: 0;
   }
 }

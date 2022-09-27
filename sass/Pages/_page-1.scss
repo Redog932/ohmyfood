@@ -2,24 +2,107 @@
   position: absolute;
   top: 32px;
   left: 16px;
+  z-index: 1;
 }
 
-main > img {
-  width: 100%;
+main {
+  position: relative;
+  > img {
+    width: 100%;
+  }
 }
 
 section h1 {
   justify-content: flex-start;
   box-shadow: none;
   border-radius: 16px 16px 0 0;
+  @media screen and (min-width: 599px) {
+    @include flexMid;
+  }
 }
 
 .page__menu {
-  border-radius: 16px 16px 0 0;
-  position: relative;
-  background-color: $lightgrey;
+  border-radius: 32px 32px 0 0;
+  position: absolute;
+  top: 90%;
+  background-color: #f6f6f6;
+  width: 100%;
+  padding-top: 16px;
+  @media screen and (min-width: 599px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    justify-content: center;
+  }
+
+  &--icon {
+    position: absolute;
+    right: 0px;
+    top: 16px;
+  }
 
   & i {
     @include heart--position;
+    top: 16px;
+  }
+
+  .desktop--grid {
+    @media screen and (min-width: 599px) {
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 8px;
+grid-row-gap: 8px;
+    }
+  }
+
+  button {
+    margin: 58px auto;
+    @include flexMid;
+    @media screen and (min-width: 599px) {
+      @include flexMid;
+      width: auto;
+      height: fit-content;
+    }
+  }
+}
+
+.selection {
+  margin: 0 8px;
+  &__title {
+    text-align: start;
+    margin: 16px;
+  }
+
+  &__food {
+    position: relative;
+    background-color: white;
+    border-radius: 16px;
+    padding: 8px;
+    margin: 8px;
+
+    h3 {
+      margin: 8px;
+    }
+    p {
+      text-align: start;
+      margin: 8px;
+      color: $grey;
+    }
+  }
+
+  &__price {
+    position: absolute;
+    right: 24px;
+    bottom: 16px;
+  }
+}
+
+.contact {
+  &__page {
+    position: absolute;
+    width: 100%;
+    bottom: -135%;
   }
 }

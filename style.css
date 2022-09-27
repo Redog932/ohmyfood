@@ -122,7 +122,6 @@ button:hover {
   opacity: 1;
 }
 .heart--empty:hover {
-  color: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   opacity: 0;
 }
 
@@ -257,6 +256,16 @@ h1 {
   padding: 0 5%;
 }
 
+@media screen and (min-width: 599px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+}
+
 .contact {
   background-color: #454545;
   color: white;
@@ -282,8 +291,12 @@ h1 {
   position: absolute;
   top: 32px;
   left: 16px;
+  z-index: 1;
 }
 
+main {
+  position: relative;
+}
 main > img {
   width: 100%;
 }
@@ -293,19 +306,105 @@ section h1 {
   box-shadow: none;
   border-radius: 16px 16px 0 0;
 }
+@media screen and (min-width: 599px) {
+  section h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .page__menu {
-  border-radius: 16px 16px 0 0;
-  position: relative;
+  border-radius: 32px 32px 0 0;
+  position: absolute;
+  top: 90%;
   background-color: #f6f6f6;
+  width: 100%;
+  padding-top: 16px;
+}
+@media screen and (min-width: 599px) {
+  .page__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    justify-content: center;
+  }
+}
+.page__menu--icon {
+  position: absolute;
+  right: 0px;
+  top: 16px;
 }
 .page__menu i {
   font-size: 32px;
   position: absolute;
   right: 16px;
   top: 15%;
+  top: 16px;
 }
 .page__menu i:hover {
   cursor: pointer;
   transition: 0.25s;
+}
+@media screen and (min-width: 599px) {
+  .page__menu .desktop--grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+}
+.page__menu button {
+  margin: 58px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 599px) {
+  .page__menu button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+.selection {
+  margin: 0 8px;
+}
+.selection__title {
+  text-align: start;
+  margin: 16px;
+}
+.selection__food {
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+  padding: 8px;
+  margin: 8px;
+}
+.selection__food h3 {
+  margin: 8px;
+}
+.selection__food p {
+  text-align: start;
+  margin: 8px;
+  color: #606060;
+}
+.selection__price {
+  position: absolute;
+  right: 24px;
+  bottom: 16px;
+}
+
+.contact__page {
+  position: absolute;
+  width: 100%;
+  bottom: -135%;
 }/*# sourceMappingURL=style.css.map */
