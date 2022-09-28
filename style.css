@@ -301,13 +301,6 @@ h1 {
   z-index: 1;
 }
 
-main {
-  position: relative;
-}
-main > img {
-  width: 100%;
-}
-
 section h1 {
   justify-content: flex-start;
   box-shadow: none;
@@ -323,8 +316,8 @@ section h1 {
 
 .page__menu {
   border-radius: 32px 32px 0 0;
-  position: absolute;
-  top: 90%;
+  position: relative;
+  bottom: 32px;
   background-color: #f6f6f6;
   width: 100%;
   padding-top: 16px;
@@ -338,6 +331,16 @@ section h1 {
          column-gap: 5%;
     justify-content: center;
   }
+}
+.page__menu__img {
+  width: 100%;
+}
+.page__menu__img img {
+  max-width: 100%;
+  max-height: 512px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page__menu--icon {
   position: absolute;
@@ -411,10 +414,4 @@ section h1 {
   position: absolute;
   right: 24px;
   bottom: 16px;
-}
-
-.contact__page {
-  position: absolute;
-  width: 100%;
-  bottom: -135%;
 }/*# sourceMappingURL=style.css.map */

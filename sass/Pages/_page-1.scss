@@ -5,13 +5,6 @@
   z-index: 1;
 }
 
-main {
-  position: relative;
-  > img {
-    width: 100%;
-  }
-}
-
 section h1 {
   justify-content: flex-start;
   box-shadow: none;
@@ -23,8 +16,8 @@ section h1 {
 
 .page__menu {
   border-radius: 32px 32px 0 0;
-  position: absolute;
-  top: 90%;
+  position: relative;
+  bottom: 32px;
   background-color: #f6f6f6;
   width: 100%;
   padding-top: 16px;
@@ -34,6 +27,16 @@ section h1 {
     flex-wrap: wrap;
     column-gap: 5%;
     justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    & img {
+      max-width: 100%;
+      max-height: 512px;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   &--icon {
@@ -99,16 +102,5 @@ section h1 {
     position: absolute;
     right: 24px;
     bottom: 16px;
-  }
-}
-
-.contact {
-  &__page {
-    position: absolute;
-    width: 100%;
-    bottom: -135%;
-    // @media screen and (min-width: 599px) {
-    //   bottom: -115%;
-    // }
   }
 }
