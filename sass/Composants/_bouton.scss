@@ -1,6 +1,7 @@
 button {
    @include Button;
     &:hover {
+      transform: scale(1.15);
       cursor: pointer;
     }
   }

@@ -22,6 +22,9 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .locate {
@@ -51,8 +54,12 @@ button {
   box-shadow: 10px 8px 20px -8px rgba(0, 0, 0, 0.49);
   background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   margin-bottom: 48px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
 }
 button:hover {
+  transform: scale(1.15);
   cursor: pointer;
 }
 
