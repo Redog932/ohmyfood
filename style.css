@@ -95,13 +95,11 @@ button:hover {
   font-size: 32px;
   position: absolute;
   right: 16px;
-  top: 15%;
 }
 .card__title--position i:hover {
   background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   cursor: pointer;
   transition: 350ms;
-  color: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
 }
 .card--badge {
   position: absolute;
@@ -121,7 +119,6 @@ button:hover {
   opacity: 0;
 }
 .fa-solid.fa-heart:hover {
-  background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -352,18 +349,22 @@ section h1 {
   right: 0px;
   top: 16px;
 }
-.page__menu i {
+.page__menu .fa-solid.fa-heart,
+.page__menu .fa-regular.fa-heart {
   font-size: 32px;
   position: absolute;
   right: 16px;
-  top: 15%;
   top: 16px;
 }
-.page__menu i:hover {
+.page__menu .fa-solid.fa-heart:hover,
+.page__menu .fa-regular.fa-heart:hover {
   background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   cursor: pointer;
   transition: 350ms;
-  color: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
+}
+.page__menu .fa-solid.fa-circle-check {
+  font-size: 24px;
+  color: white;
 }
 @media screen and (min-width: 599px) {
   .page__menu .desktop--grid {
@@ -402,11 +403,19 @@ section h1 {
   display: inline-block;
   border-bottom: 5px solid #99e2d0;
 }
+.selection--check {
+  background-color: #99e2d0;
+  width: 15%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 16px 16px 0;
+}
 .selection__food {
-  position: relative;
+  display: flex;
   background-color: white;
   border-radius: 16px;
-  padding: 8px;
   margin: 8px;
 }
 .selection__food h3 {
@@ -418,7 +427,12 @@ section h1 {
   color: #606060;
 }
 .selection__price {
-  position: absolute;
-  right: 24px;
-  bottom: 16px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  padding: 8px;
+}
+
+.fa-circle {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

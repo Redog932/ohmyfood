@@ -9,12 +9,10 @@
   font-size: 32px;
   position: absolute;
   right: 16px;
-  top: 15%;
   &:hover {
     background-image: linear-gradient(to top, $primary, rgb(234, 118, 234));
     cursor: pointer;
     transition: 350ms;
-    color: $heart ;
   }
 }
 
