@@ -11,8 +11,10 @@
   right: 16px;
   top: 15%;
   &:hover {
+    background-image: linear-gradient(to top, $primary, rgb(234, 118, 234));
     cursor: pointer;
-    transition: 000.25s;
+    transition: 350ms;
+    color: $heart ;
   }
 }
 

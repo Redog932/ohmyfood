@@ -98,8 +98,10 @@ button:hover {
   top: 15%;
 }
 .card__title--position i:hover {
+  background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   cursor: pointer;
-  transition: 0.25s;
+  transition: 350ms;
+  color: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
 }
 .card--badge {
   position: absolute;
@@ -115,20 +117,23 @@ button:hover {
   color: grey;
 }
 
-.heart--full {
+.fa-solid.fa-heart {
   opacity: 0;
 }
-.heart--full:hover {
-  color: #9656dc;
+.fa-solid.fa-heart:hover {
+  background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   transform-origin: center;
-  transform: 0.25ms;
+  transform: 150ms;
   opacity: 1;
 }
 
-.heart--empty {
+.fa-regular.fa-heart {
   opacity: 1;
 }
-.heart--empty:hover {
+.fa-regular.fa-heart:hover {
   opacity: 0;
 }
 
@@ -243,7 +248,7 @@ h1 {
   color: black;
 }
 .tuto ol li:hover {
-  background-color: #ffdbf5;
+  background-color: #eaddff;
   color: #9656dc;
 }
 .tuto ol li:hover .fa-solid {
@@ -355,8 +360,10 @@ section h1 {
   top: 16px;
 }
 .page__menu i:hover {
+  background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   cursor: pointer;
-  transition: 0.25s;
+  transition: 350ms;
+  color: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
 }
 @media screen and (min-width: 599px) {
   .page__menu .desktop--grid {

@@ -47,16 +47,20 @@
   }
 }
 
-.heart--full {
+.fa-solid.fa-heart {
   opacity: 0;
   &:hover {
-    color: $primary;
+    background-image: linear-gradient(to top, $primary, rgb(234, 118, 234));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     transform-origin: center;
-    transform: 0.25ms;
+    transform: 150ms;
     opacity: 1;
   }
 }
-.heart--empty {
+
+.fa-regular.fa-heart {
   opacity: 1;
   &:hover {
     opacity: 0;
