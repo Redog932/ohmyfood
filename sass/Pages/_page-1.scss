@@ -98,7 +98,6 @@ section h1 {
 
   &__food {
     display: flex;
-    // position: relative;
     background-color: white;
     border-radius: 16px;
     margin: 8px;
@@ -114,9 +113,6 @@ section h1 {
   }
 
   &__price {
-    // position: absolute;
-    // right: 24px;
-    // bottom: 16px;
     display: flex;
     align-items: flex-end;
     margin-left: auto;
