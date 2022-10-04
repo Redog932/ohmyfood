@@ -1,3 +1,39 @@
+@-webkit-keyframes check-rotate {
+  0% {
+    transform: rotate(-75deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(-75deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes pop-up {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes pop-up {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -411,8 +447,9 @@ section h1 {
 
 .selection {
   margin: 0 8px;
-  transition: translateY(0%);
-  transform: transition translateY(100%) 1.3s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .selection__title {
   text-align: start;
@@ -438,7 +475,7 @@ section h1 {
   justify-content: center;
   border-radius: 0 16px 16px 0;
   margin-right: -15%;
-  transition: margin-right 300ms;
+  transition: margin-right 450ms;
 }
 .selection__food {
   display: flex;
@@ -449,6 +486,26 @@ section h1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  -webkit-animation: pop-up 1000ms;
+          animation: pop-up 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.selection__food:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+.selection__food:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.selection__food:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.selection__food:nth-child(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 .selection__food:hover {
   transform: scale(1.05);
@@ -465,22 +522,6 @@ section h1 {
   -webkit-animation: check-rotate 500ms ease-in-out;
           animation: check-rotate 500ms ease-in-out;
 }
-@-webkit-keyframes check-rotate {
-  0% {
-    transform: rotate(-75deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes check-rotate {
-  0% {
-    transform: rotate(-75deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 .selection__food h3 {
   flex-wrap: nowrap;
 }
@@ -492,7 +533,7 @@ section h1 {
   display: flex;
   align-items: flex-end;
   margin-left: auto;
-  padding: 8px;
+  padding: 8px 16px;
 }
 
 .fa-circle {

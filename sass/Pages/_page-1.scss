@@ -86,8 +86,9 @@ section h1 {
 
 .selection {
   margin: 0 8px;
-  transition: translateY(0%);
-  transform: transition translateY(100%) 1.3s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   &__title {
     text-align: start;
     margin: 16px;
@@ -112,7 +113,7 @@ section h1 {
     justify-content: center;
     border-radius: 0 16px 16px 0;
     margin-right: -15%;
-    transition: margin-right 300ms;
+    transition: margin-right 450ms;
   }
   
   &__food {
@@ -124,6 +125,13 @@ section h1 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    animation: pop-up 1000ms;
+    animation-fill-mode: both;
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        animation-delay: 100ms * $i;
+      }
+    }
     &:hover {
       transform: scale(1.05);
       transition: transform 400ms;
@@ -136,7 +144,6 @@ section h1 {
     &:hover .selection--check {
       margin-right: 0;
       & i {
-      @include check-rotate;
       animation: check-rotate 500ms ease-in-out;
       }
     }
@@ -154,7 +161,7 @@ section h1 {
     display: flex;
     align-items: flex-end;
     margin-left: auto;
-    padding: 8px;
+    padding: 8px 16px;
   }
 }
 
