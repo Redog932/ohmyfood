@@ -127,13 +127,13 @@ section h1 {
     text-overflow: ellipsis;
     animation: pop-up 1000ms;
     animation-fill-mode: both;
-    @for $i from 1 through 4 {
+    @for $i from 1 through 3 {
       &:nth-child(#{$i}) {
-        animation-delay: 100ms * $i;
+        animation-delay: 150ms * $i;
       }
     }
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.15);
       transition: transform 400ms;
       transition-delay: 450ms;
       cursor: pointer;

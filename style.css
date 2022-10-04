@@ -16,7 +16,7 @@
 }
 @-webkit-keyframes pop-up {
   0% {
-    transform: translateY(1000px);
+    transform: translateY(-100%);
     opacity: 0;
   }
   100% {
@@ -26,12 +26,32 @@
 }
 @keyframes pop-up {
   0% {
-    transform: translateY(1000px);
+    transform: translateY(-100%);
     opacity: 0;
   }
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes loader {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes loader {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 * {
@@ -61,6 +81,36 @@ a {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  opacity: 90%;
+  z-index: 2;
+  inset: 0;
+  -webkit-animation: loader 3s forwards;
+          animation: loader 3s forwards;
+}
+.loader::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top: 5px solid #9656dc;
+  border-left: 5px solid #ff79da;
+  border-right: 5px solid #99e2d0;
+  border-bottom: 5px solid transparent;
+  -webkit-animation: spin 1s infinite ease-in-out;
+          animation: spin 1s infinite ease-in-out;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 .locate {
@@ -492,23 +542,19 @@ section h1 {
           animation-fill-mode: both;
 }
 .selection__food:nth-child(1) {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
 }
 .selection__food:nth-child(2) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-.selection__food:nth-child(3) {
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
-.selection__food:nth-child(4) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+.selection__food:nth-child(3) {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
 }
 .selection__food:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
   transition: transform 400ms;
   transition-delay: 450ms;
   cursor: pointer;
