@@ -3,6 +3,12 @@
   border-radius: 16px;
   background-color: white;
   position: relative;
+  transform: scale(1);
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 400ms;
+      cursor: pointer;
+    }
 
   &--disposition {
     background-color: $lightgrey;
