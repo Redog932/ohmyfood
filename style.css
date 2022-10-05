@@ -34,32 +34,11 @@
     opacity: 1;
   }
 }
-.selection__food-1 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.selection__food-2 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.selection__food-3 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-.selection__food-4 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
 @-webkit-keyframes loader {
   to {
     visibility: hidden;
   }
 }
-
 @keyframes loader {
   to {
     visibility: hidden;
