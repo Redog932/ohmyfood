@@ -1,9 +1,9 @@
 @keyframes check-rotate {
   0% {
-    transform: rotate(-75deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -17,6 +17,13 @@
     opacity: 1;
   }
 }
+
+@for $i from 1 through 4 {
+  .selection__food-#{$i} {
+    animation-delay: #{$i * 0.5}s;
+  }
+}
+
 
 @keyframes loader {
   to {

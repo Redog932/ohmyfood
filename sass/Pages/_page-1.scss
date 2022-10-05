@@ -89,6 +89,17 @@ section h1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  & > a {
+    animation: pop-up 1500ms;
+    animation-fill-mode: both;
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        animation-delay: 150ms * $i;
+      }
+    }
+  }
+
   &__title {
     text-align: start;
     margin: 16px;
@@ -125,13 +136,7 @@ section h1 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    animation: pop-up 1000ms;
-    animation-fill-mode: both;
-    @for $i from 1 through 3 {
-      &:nth-child(#{$i}) {
-        animation-delay: 150ms * $i;
-      }
-    }
+   
     &:hover {
       transform: scale(1.15);
       transition: transform 400ms;

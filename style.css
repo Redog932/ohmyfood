@@ -1,17 +1,17 @@
 @-webkit-keyframes check-rotate {
   0% {
-    transform: rotate(-75deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes check-rotate {
   0% {
-    transform: rotate(-75deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes pop-up {
@@ -34,11 +34,32 @@
     opacity: 1;
   }
 }
+.selection__food-1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.selection__food-2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.selection__food-3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.selection__food-4 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
 @-webkit-keyframes loader {
   to {
     visibility: hidden;
   }
 }
+
 @keyframes loader {
   to {
     visibility: hidden;
@@ -501,6 +522,32 @@ section h1 {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.selection > a {
+  -webkit-animation: pop-up 1500ms;
+          animation: pop-up 1500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.selection > a:nth-child(1) {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+.selection > a:nth-child(2) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.selection > a:nth-child(3) {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+.selection > a:nth-child(4) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.selection > a:nth-child(5) {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
 .selection__title {
   text-align: start;
   margin: 16px;
@@ -536,22 +583,6 @@ section h1 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  -webkit-animation: pop-up 1000ms;
-          animation: pop-up 1000ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-.selection__food:nth-child(1) {
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms;
-}
-.selection__food:nth-child(2) {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
-}
-.selection__food:nth-child(3) {
-  -webkit-animation-delay: 450ms;
-          animation-delay: 450ms;
 }
 .selection__food:hover {
   transform: scale(1.15);
