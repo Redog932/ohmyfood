@@ -1,11 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 body {
   width: 100%;
   margin: 0;
-  
+  font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
 }
 
@@ -36,7 +35,7 @@ a {
   opacity: 90%;
   z-index: 2;
   inset: 0;
-  animation: loader $anim-time*$anim-count forwards;
+  animation: loader $anim-time * $anim-count forwards;
   &::after {
     content: "";
     width: 100px;
