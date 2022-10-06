@@ -1,8 +1,8 @@
 button {
-   @include Button;
-    &:hover {
-      transform: scale(1.15);
-      cursor: pointer;
-      box-shadow: 0px 1px 30px 0px $third;
-    }
-  }
+  @include Button;
+   &:hover {
+     transform: scale(1.15);
+     cursor: pointer;
+     box-shadow: 0px 1px 30px 0px $third;
+   }
+ }
