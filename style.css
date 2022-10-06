@@ -555,12 +555,23 @@ section h1 {
   text-align: start;
   margin: 16px;
   display: inline-block;
-  border-bottom: 5px solid #99e2d0;
+  position: relative;
+  padding-bottom: 8px;
+}
+.selection__title:after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .selection__description {
   overflow: hidden;
 }
-.selection__description h3, .selection__description p {
+.selection__description h3,
+.selection__description p {
   margin: 8px;
   overflow: hidden;
   white-space: nowrap;

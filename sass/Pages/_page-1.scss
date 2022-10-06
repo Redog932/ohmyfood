@@ -4,11 +4,11 @@
   left: 16px;
   z-index: 1;
   transform: scale(1);
-    &:hover {
-      transform: scale(1.25);
-      transition: transform 400ms;
-      cursor: pointer;
-    }
+  &:hover {
+    transform: scale(1.25);
+    transition: transform 400ms;
+    cursor: pointer;
+  }
 }
 
 section h1 {
@@ -106,16 +106,28 @@ section h1 {
     text-align: start;
     margin: 16px;
     display: inline-block;
-    border-bottom: 5px solid $third;
+    position: relative;
+    padding-bottom: 8px;
+    &:after {
+      content: "";
+      width: 48px;
+      height: 4px;
+      background-color: #99e2d0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
   }
   &__description {
     overflow: hidden;
 
-    & h3,p {
-      margin:8px;
+    & h3,
+    p {
+      margin: 8px;
       overflow: hidden;
       white-space: nowrap;
-      text-overflow: ellipsis;    }
+      text-overflow: ellipsis;
+    }
   }
 
   &--check {
@@ -129,7 +141,7 @@ section h1 {
     margin-right: -15%;
     transition: margin-right 450ms;
   }
-  
+
   &__food {
     display: flex;
     background-color: white;
@@ -137,7 +149,7 @@ section h1 {
     margin: 8px;
     transform: scale(1);
     overflow: hidden;
-   
+
     &:hover {
       transform: scale(1.03);
       transition: transform 400ms;
@@ -150,7 +162,7 @@ section h1 {
     &:hover .selection--check {
       margin-right: 0;
       & i {
-      animation: check-rotate 500ms ease-in-out;
+        animation: check-rotate 500ms ease-in-out;
       }
     }
 
