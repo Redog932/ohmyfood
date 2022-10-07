@@ -18,6 +18,17 @@
   }
 }
 
+@keyframes fade {
+  0% {
+    transform: fade(0);
+    opacity: 0;
+  }
+  100% {
+    transform: fade(1);
+    opacity: 1;
+  }
+}
+
 
 
 

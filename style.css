@@ -34,6 +34,26 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes fade {
+  0% {
+    transform: fade(0);
+    opacity: 0;
+  }
+  100% {
+    transform: fade(1);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    transform: fade(0);
+    opacity: 0;
+  }
+  100% {
+    transform: fade(1);
+    opacity: 1;
+  }
+}
 @-webkit-keyframes loader {
   to {
     visibility: hidden;
@@ -521,58 +541,48 @@ section h1 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-.selection:not(h2, .selection__title) {
-  -webkit-animation: pop-up 1500ms;
-          animation: pop-up 1500ms;
+  -webkit-animation: pop-up 250ms;
+          animation: pop-up 250ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.selection:not(h2, .selection__title):nth-child(1) {
+.selection:nth-child(1) {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+.selection:nth-child(2) {
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
 }
-.selection:not(h2, .selection__title):nth-child(2) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-.selection:not(h2, .selection__title):nth-child(3) {
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-}
-.selection:not(h2, .selection__title):nth-child(4) {
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-}
-.selection:not(h2, .selection__title):nth-child(5) {
-  -webkit-animation-delay: 2500ms;
-          animation-delay: 2500ms;
+.selection:nth-child(3) {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
 }
 .selection > a {
-  -webkit-animation: pop-up 1500ms;
-          animation: pop-up 1500ms;
+  -webkit-animation: fade 250ms;
+          animation: fade 250ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 .selection > a:nth-child(1) {
-  -webkit-animation-delay: 510ms;
-          animation-delay: 510ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 .selection > a:nth-child(2) {
-  -webkit-animation-delay: 520ms;
-          animation-delay: 520ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 .selection > a:nth-child(3) {
-  -webkit-animation-delay: 530ms;
-          animation-delay: 530ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 .selection > a:nth-child(4) {
-  -webkit-animation-delay: 540ms;
-          animation-delay: 540ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 .selection > a:nth-child(5) {
-  -webkit-animation-delay: 550ms;
-          animation-delay: 550ms;
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
 }
 .selection > a:hover {
   overflow: visible;
