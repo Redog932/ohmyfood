@@ -89,17 +89,17 @@ section h1 {
   overflow: hidden;
   height: fit-content;
   @for $i from 1 through 3 {
-    &:nth-child:not(:first-child) {
-      animation: pop-up 200ms;
+    &:not(::first-line):nth-child(#{$i}) {
+      animation:  pop-up 250ms;
       animation-fill-mode: both;
-      animation-delay: 150ms * $i;
+      animation-delay: 250ms * $i;
     }
   }
 
-  & a {
-    animation: fade 250ms;
+  & > a {
+    animation:fade 250ms;
     animation-fill-mode: both;
-    @for $i from 1 through 10 {
+    @for $i from 1 through 5 {
       &:nth-child(#{$i}) {
         animation-delay: 500ms * $i;
       }
@@ -157,7 +157,6 @@ section h1 {
     margin: 8px;
     transform: scale(1);
     overflow: hidden;
-    
 
     &:hover {
       transform: scale(1.03);
