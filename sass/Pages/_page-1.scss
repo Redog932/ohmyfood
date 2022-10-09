@@ -88,27 +88,15 @@ section h1 {
   margin: 0 8px;
   overflow: hidden;
   height: fit-content;
-  &--delay {
-    animation: pop-up 250ms;
-    animation-fill-mode: both;
-    @for $i from 1 through 3 {
-      &:nth-child(#{$i}) {
-        animation-delay: 250ms * $i;
-      }
+  @for $i from 1 through 3 {
+    &:nth-child:not(:first-child) {
+      animation: pop-up 200ms;
+      animation-fill-mode: both;
+      animation-delay: 150ms * $i;
     }
   }
 
-  // &:not(.selection__title) {
-  //   animation: fade 150ms;
-  //   animation-fill-mode: both;
-  //   @for $i from 1 through 3 {
-  //     &:nth-child(#{$i}) {
-  //       animation-delay: 200ms * $i;
-  //     }
-  //   }
-  // }
-
-  & > a {
+  & a {
     animation: fade 250ms;
     animation-fill-mode: both;
     @for $i from 1 through 10 {
@@ -169,6 +157,7 @@ section h1 {
     margin: 8px;
     transform: scale(1);
     overflow: hidden;
+    
 
     &:hover {
       transform: scale(1.03);
