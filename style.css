@@ -220,7 +220,6 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   transform-origin: center;
-  transform: 150ms;
   opacity: 1;
 }
 
@@ -418,6 +417,16 @@ h1 {
     grid-column-gap: 8px;
     grid-row-gap: 8px;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 599px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
   }
 }
 
