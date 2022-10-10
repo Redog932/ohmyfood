@@ -62,17 +62,6 @@ section h1 {
     color: white;
   }
 
-  .desktop--grid {
-    @media screen and (min-width: 599px) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr;
-      grid-column-gap: 8px;
-      grid-row-gap: 8px;
-      width: 100%;
-    }
-  }
-
   button {
     margin: 58px auto;
     @include flexMid;
@@ -88,22 +77,16 @@ section h1 {
   margin: 0 8px;
   overflow: hidden;
   height: fit-content;
-  @for $i from 1 through 3 {
-    &:not(::first-line):nth-child(#{$i}) {
-      animation:  pop-up 250ms;
-      animation-fill-mode: both;
-      animation-delay: 250ms * $i;
-    }
-  }
 
   & > a {
-    animation:fade 250ms;
+    animation: pop-up 1s;
     animation-fill-mode: both;
     @for $i from 1 through 5 {
       &:nth-child(#{$i}) {
         animation-delay: 500ms * $i;
       }
     }
+
     &:hover {
       overflow: visible;
     }
