@@ -8,12 +8,3 @@
   }
 }
 
-.menu {
-  @media screen and (min-width: 599px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-  }
-}
