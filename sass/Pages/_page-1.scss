@@ -78,8 +78,8 @@ section h1 {
   overflow: hidden;
   height: fit-content;
 
-  & > a {
-    animation: pop-up 1s;
+  & > div.selection__food {
+    animation: pop-up 500ms;
     animation-fill-mode: both;
     @for $i from 1 through 5 {
       &:nth-child(#{$i}) {
