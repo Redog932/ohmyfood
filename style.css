@@ -541,8 +541,6 @@ section h1 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-animation: pop-up;
-          animation: pop-up;
 }
 .selection--delay1 {
   -webkit-animation: pop-up 500ms;
@@ -623,9 +621,6 @@ section h1 {
           animation-fill-mode: both;
   -webkit-animation-delay: 5000ms;
           animation-delay: 5000ms;
-}
-.selection:hover {
-  overflow: visible;
 }
 .selection__title {
   text-align: start;

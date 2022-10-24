@@ -77,7 +77,6 @@ section h1 {
   margin: 0 8px;
   overflow: hidden;
   height: fit-content;
-  animation: pop-up;
 
   &--delay1{
     animation: pop-up 500ms;
@@ -130,10 +129,10 @@ section h1 {
     animation-delay: 5000ms;
   }
 
-
-  &:hover {
-    overflow: visible;
-  }
+    // &:hover {
+    //   overflow: visible;
+    // }
+  
 
   &__title {
     text-align: start;
