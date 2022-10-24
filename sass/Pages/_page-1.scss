@@ -77,19 +77,62 @@ section h1 {
   margin: 0 8px;
   overflow: hidden;
   height: fit-content;
+  animation: pop-up;
 
-  & > div.selection__food {
+  &--delay1{
     animation: pop-up 500ms;
     animation-fill-mode: both;
-    @for $i from 1 through 5 {
-      &:nth-child(#{$i}) {
-        animation-delay: 500ms * $i;
-      }
-    }
+    animation-delay: 500ms;
+  }
+  &--delay2 {
+    animation: pop-up 500ms;
+    animation-fill-mode: both;
+    animation-delay: 1000ms;
+  }
+  &--delay3 {
+    animation: pop-up 500ms;
+    animation-fill-mode: both;
+    animation-delay: 1500ms;
+  }
+  &--delay4 {
+    animation: pop-up 500ms;
+    animation-fill-mode: both;
+    animation-delay: 2000ms;
+  }
+  &--delay5 {
+    animation: pop-up 500ms;
+    animation-fill-mode: both;
+    animation-delay: 2500ms;
+  }
+  &--delay6 {
+    animation: pop-up 500ms;
+    animation-fill-mode: both;
+    animation-delay: 3000ms;
+  }
+  &--delay7 {
+    animation: pop-up 500ms;
+    animation-fill-mode: both;
+    animation-delay: 3500ms;
+  }
+  &--delay8 {
+    animation: pop-up 500ms;
+    animation-fill-mode: both;
+    animation-delay: 4000ms;
+  }
+  &--delay9 {
+    animation: pop-up 500ms;
+    animation-fill-mode: both;
+    animation-delay: 4500ms;
+  }
+  &--delay10 {
+    animation: pop-up 500ms;
+    animation-fill-mode: both;
+    animation-delay: 5000ms;
+  }
 
-    &:hover {
-      overflow: visible;
-    }
+
+  &:hover {
+    overflow: visible;
   }
 
   &__title {

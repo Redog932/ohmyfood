@@ -14,6 +14,26 @@
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes fade {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 @-webkit-keyframes pop-up {
   0% {
     transform: translateY(50%);
@@ -196,7 +216,7 @@ button:hover {
 .card__title--position i:hover {
   background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   cursor: pointer;
-  transition: 350ms;
+  transition: 1s;
 }
 .card--badge {
   position: absolute;
@@ -318,7 +338,7 @@ h1 {
   padding: 24px 32px;
   margin: 16px 0;
   background-color: #ebebeb;
-  box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.49);
+  box-shadow: 2px 7px 13px 0px rgba(63, 61, 61, 0.2196078431);
   border-radius: 16px;
   position: relative;
 }
@@ -491,7 +511,7 @@ section h1 {
 .page__menu .fa-regular.fa-heart:hover {
   background-image: linear-gradient(to top, #9656dc, rgb(234, 118, 234));
   cursor: pointer;
-  transition: 350ms;
+  transition: 1s;
 }
 .page__menu .fa-solid.fa-circle-check {
   font-size: 24px;
@@ -521,34 +541,90 @@ section h1 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-animation: pop-up;
+          animation: pop-up;
 }
-.selection > div.selection__food {
+.selection--delay1 {
   -webkit-animation: pop-up 500ms;
           animation: pop-up 500ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-}
-.selection > div.selection__food:nth-child(1) {
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
 }
-.selection > div.selection__food:nth-child(2) {
+.selection--delay2 {
+  -webkit-animation: pop-up 500ms;
+          animation: pop-up 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
 }
-.selection > div.selection__food:nth-child(3) {
+.selection--delay3 {
+  -webkit-animation: pop-up 500ms;
+          animation: pop-up 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1500ms;
           animation-delay: 1500ms;
 }
-.selection > div.selection__food:nth-child(4) {
+.selection--delay4 {
+  -webkit-animation: pop-up 500ms;
+          animation: pop-up 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
 }
-.selection > div.selection__food:nth-child(5) {
+.selection--delay5 {
+  -webkit-animation: pop-up 500ms;
+          animation: pop-up 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 2500ms;
           animation-delay: 2500ms;
 }
-.selection > div.selection__food:hover {
+.selection--delay6 {
+  -webkit-animation: pop-up 500ms;
+          animation: pop-up 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+}
+.selection--delay7 {
+  -webkit-animation: pop-up 500ms;
+          animation: pop-up 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
+}
+.selection--delay8 {
+  -webkit-animation: pop-up 500ms;
+          animation: pop-up 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 4000ms;
+          animation-delay: 4000ms;
+}
+.selection--delay9 {
+  -webkit-animation: pop-up 500ms;
+          animation: pop-up 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 4500ms;
+          animation-delay: 4500ms;
+}
+.selection--delay10 {
+  -webkit-animation: pop-up 500ms;
+          animation: pop-up 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 5000ms;
+          animation-delay: 5000ms;
+}
+.selection:hover {
   overflow: visible;
 }
 .selection__title {
